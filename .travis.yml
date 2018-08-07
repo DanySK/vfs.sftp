@@ -28,10 +28,7 @@ before_script:
   -DPACKAGE_ZIP=1 $TRAVIS_BUILD_DIR/../xbmc/cmake/addons
 script: make
 after_success:
-- ls -ahl $TRAVIS_BUILD_DIR/../xbmc/
-- ls -ahl $TRAVIS_BUILD_DIR/../xbmc/addons/
-- ls -ahl $TRAVIS_BUILD_DIR/../xbmc/kodi-build/
-- ls -ahl $TRAVIS_BUILD_DIR/../xbmc/kodi-build/addons
+- ls -ahl $TRAVIS_BUILD_DIR/../xbmc/addons/vfs.sftp/
 deploy:
   provider: releases
   file_glob: true
